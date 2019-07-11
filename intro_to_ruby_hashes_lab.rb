@@ -1,6 +1,5 @@
-def new_hash
-  {}
-end
+new_hash = {}
+
 
 def my_hash
  {name: "carl" , othe_name: "kyle"}
