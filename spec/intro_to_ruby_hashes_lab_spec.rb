@@ -2,9 +2,16 @@ require_relative 'spec_helper'
 require_relative '../intro_to_ruby_hashes_lab.rb'
 
 describe "working with hashes" do
-
+person = {first_name: "Philip", last_name: "Brown"}
   describe "instantiating" do
     describe "new_hash" do
+      options = { font_size: 10, font_family: "Arial" }
+  # hashes are created with brackets {}. E.G: new_hash = {}
+  hash = {
+    "title" => "Grocery List", # this is a key / value pair. In this case, "title" is the key and "Grocery List" is the value
+    "items" => []  # the key 'item' is an empty array.
+  }
+end
       it "creates an empty hash and returns it" do
         expect(new_hash).to eq({})
       end
