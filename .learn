@@ -5,3 +5,17 @@ tags:
 languages:
   - ruby
 resources: 1
+.new_hash:
+new hash: = {0=> lambda {puts "hello world}}
+.my_hash:
+my_hash: = {} # an empty hash grades = { 'Adam' => 20, 'Brent' => 15, 'Chris' => 10 }
+:Grace Hopper:
+pioneer: = {} # :name = {'Grace Hopper'}
+:id:
+id_generator: = {} # :id = {2}
+.my_hash_creator:
+my_hash_creator: = {} # key = #value {4}
+.read_from_hash:
+read_from_hash: = {} #, #key
+.update_counting_hash:
+update_counting_hash: = { :apples => 3 } { :apples => 4 }
