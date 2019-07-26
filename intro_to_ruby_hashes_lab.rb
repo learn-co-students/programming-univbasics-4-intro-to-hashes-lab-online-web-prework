@@ -1,9 +1,10 @@
 def new_hash
-  # return an empty hash
+  test_hash = {food: "mac and cheese", car: "s2000"}
 end
 
 def my_hash
-  # return a valid hash with any key/value pair of your choice
+  test_hash = {}
+  test_hash[gender:] = "male"
 end
 
 def pioneer
