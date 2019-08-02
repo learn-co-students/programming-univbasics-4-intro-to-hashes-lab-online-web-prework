@@ -7,10 +7,12 @@ def my_hash
   return hash = {name:'Bak'}
 end
 
-def pioneer
+def pioneer( name = 'name', value='Grace Hopper')
   # return a hash with a key of :name and a corresponding value of 'Grace Hopper'
-return{name:'Grace Hopper'}
-  
+ hash = {name: value}
+
+ return hash
+ 
 end
 
 def id_generator
@@ -18,9 +20,9 @@ def id_generator
   return hash={id:1}
 end
 
-def my_hash_creator(key, value)
+def my_hash_creator(name, value)
   # return a hash that includes the key and value parameters passed into this method
- return hash ={ key: value }
+ return hash ={ name => value }
 end
 
 def read_from_hash(hash, key)
