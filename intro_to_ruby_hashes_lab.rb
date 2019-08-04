@@ -10,13 +10,11 @@ describe "instantiating"
   end
 end
 
-def id_generator
-  # return a hash with a key :id assigned to positive integer
-end
 
-def my_hash_creator(key, value)
-  # return a hash that includes the key and value parameters passed into this method
-end
+  describe "my_hash"
+    it "creates and returns a valid hash that contains key/value pairs of your choice"
+    expect(my_hash).to be_a("employee")
+    expect(my_hash.keys.count).to
 
 def read_from_hash(hash, key)
   # return the correct value using the hash and key parameters
