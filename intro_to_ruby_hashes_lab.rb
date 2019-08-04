@@ -14,7 +14,7 @@ end
   describe "my_hash"
     it "creates and returns a valid hash that contains key/value pairs of your choice"
     expect(my_hash).to be_a("employee")
-    expect(my_hash.keys.count).to
+    expect(my_hash.keys.count).to_not eq('0')
 
 def read_from_hash(hash, key)
   # return the correct value using the hash and key parameters
