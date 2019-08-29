@@ -10,7 +10,6 @@ describe "working with hashes" do
       end
     end
 
-
     describe "my_hash" do
       it "creates and returns a valid hash that contains key/value pairs of your choice" do
         expect(my_hash).to be_a(Hash)
@@ -24,7 +23,7 @@ describe "working with hashes" do
         expect(pioneer[:name]).to eq("Grace Hopper")
       end
     end
-
+    
     describe "id_generator" do
       it "creates and returns a hash with a key :id and a random number assigned to the value" do
         expect(id_generator).to be_a Hash
