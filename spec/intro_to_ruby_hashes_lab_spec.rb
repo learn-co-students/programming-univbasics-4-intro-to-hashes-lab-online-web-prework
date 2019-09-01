@@ -51,6 +51,7 @@ describe "reading data from a hash" do
       expect(read_from_hash({'name' => 'Tzvi'}, 'name')).to eq('Tzvi')
     end
 
+
     it "returns nil if the key is not found in the provided hash" do
       expect(read_from_hash({age: 31}, :name)).to eq(nil)
     end
@@ -75,3 +76,4 @@ describe "updating data in a hash" do
   end
 
 end
+
