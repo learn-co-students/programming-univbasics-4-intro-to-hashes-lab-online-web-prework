@@ -18,7 +18,6 @@ def id_generator
   this_hash = {
     :id => 27
   }
-end
 
 def my_hash_creator(key, value)
   this_hash = {
