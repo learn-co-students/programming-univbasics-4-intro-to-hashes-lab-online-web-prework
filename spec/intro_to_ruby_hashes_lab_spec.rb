@@ -38,7 +38,6 @@ describe "working with hashes" do
         expect(my_hash_creator(:name, 'Grace Hopper')).to be_a(Hash)
         expect(my_hash_creator(:name, 'Grace Hopper')).to eq({name: 'Grace Hopper'})
 
-        expect(my_hash_creator(1, 2)).to eq({1 => 2})
       end
     end
   end
@@ -48,7 +47,7 @@ describe "reading data from a hash" do
   describe "read_from_hash" do
     it "returns the value corresponding to the provided key" do
       expect(read_from_hash({name: 'Steve'}, :name)).to eq('Steve')
-      expect(read_from_hash({'name' => 'Tzvi'}, 'name')).to eq('Tzvi')
+           expect(read_from_hash({'name' => 'Tzvi'}, 'name')).to eq('Tzvi')
     end
 
     it "returns nil if the key is not found in the provided hash" do
