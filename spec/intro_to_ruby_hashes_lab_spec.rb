@@ -8,8 +8,7 @@ describe "working with hashes" do
       it "creates an empty hash and returns it" do
         expect(new_hash).to eq({})
       end
-    end
-
+  end
 
     describe "my_hash" do
       it "creates and returns a valid hash that contains key/value pairs of your choice" do
