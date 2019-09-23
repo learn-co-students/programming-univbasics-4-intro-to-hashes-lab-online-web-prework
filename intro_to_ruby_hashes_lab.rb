@@ -36,11 +36,11 @@ def read_from_hash(hash, key)
 end
 
 def update_counting_hash(hash, key)
-  if !hash[key]
-    hash[key] = 1
+  if !hash[key] # if the key is not in the hash
+    hash[key] = 1 # creates the key and assigns it to 1
     return hash
   else
-    hash[key] += 1
+    hash[key] += 1 # if the key is present, adds 1 to it
     return hash
   end
 end
