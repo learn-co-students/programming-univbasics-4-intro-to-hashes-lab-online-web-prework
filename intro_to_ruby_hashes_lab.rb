@@ -42,21 +42,12 @@ def read_from_hash(hash, key)
  hash[key]
 end
 
-
-shipping_manifest2 = {
-  "whale bone corset" => 5,
-  "porcelain vase" => 2,
-  "oil painting" => 3,
-  "silverware" => 34,
-  "loom" => 1
-}
-  key2 = "oil painting"
-  hash2 = shipping_manifest2
   
 def update_counting_hash(hash2, key2)
    if hash2.has_key?(key2)
-     hash2[key2] =+ 1
+     hash2[key2] += 1
    else 
     hash2[key2] = 1
   end
+  hash2
 end
