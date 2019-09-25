@@ -57,6 +57,6 @@ def update_counting_hash(hash2, key2)
    if hash2.has_key?(key2)
      hash2[key2] =+ 1
    else 
-    hash2[key2, 1]
+    hash2[key2] = 1
   end
 end
