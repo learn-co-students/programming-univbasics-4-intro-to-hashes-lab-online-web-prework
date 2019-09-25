@@ -1,5 +1,4 @@
-def new_hash
-  # return an empty hash
+ second_new_hash = Hash.new
 end
 
 def my_hash
@@ -7,7 +6,7 @@ def my_hash
 end
 
 def pioneer
-  # return a hash with a key of :name and a corresponding value of 'Grace Hopper'
+  #pioneer return a hash with a key of :name and a corresponding value of 'Grace Hopper'
 end
 
 def id_generator
