@@ -1,29 +1,46 @@
-def new_hash
-  # return an empty hash
+def new_hash {
+  second_new_hash = hash.new
+  }
 end
 
 def my_hash
-  # return a valid hash with any key/value pair of your choice
+  dog {
+    :name => "Hutch",
+    :breed => "Husky"
+  }
 end
 
 def pioneer
-  # return a hash with a key of :name and a corresponding value of 'Grace Hopper'
+  pioneer = {
+    :name "Grace Hopper",
+    :occupation "Pioneer"
+  }
 end
 
-def id_generator
-  # return a hash with a key :id assigned to positive integer
+def id_generator {
+  :id.object_id
+}
 end
 
-def my_hash_creator(key, value)
-  # return a hash that includes the key and value parameters passed into this method
+def my_hash_creator(key, value) 
+  electornics_shippment = {
+    :phones => 5,
+    :heaphones => 3
+  }
 end
 
 def read_from_hash(hash, key)
-  # return the correct value using the hash and key parameters
+  pets = {"cat" => "Garfield", "dog" => "Hutch"}
+  if pets = "cat" => "Garfield"
+    puts nill
+  else
+    puts "Garfield"
 end
 
 def update_counting_hash(hash, key)
-  # given a hash an a key as parameters, return an updated hash
-  # if the provided key is not present in the hash, add it and assign it to the value of 1
-  # if the provided key is present, increment its value by 1
+  order_of_phones = {
+    :iPhones 10s => 3,
+    :iPhone 11pro => 5,
+}
+  order_of_phones["iPhone 11pro"] += 1
 end
