@@ -1,35 +1,43 @@
-def new_hash
-  new_hash = {}
-end
+def new_hash 
+  new = {}
+end 
 
-def my_hash
-  my_hash = {:name => "Jonathan"}
-end
+def my_hash 
+  my = {
+    :dog => "Abby"
+  }
+end 
 
 def pioneer
-  pioneer = {:name => "Grace Hopper"}
-end
-
-def id_generator
-  id_generator = {:id => 54}
-end
-
-def my_hash_creator(key, value)
-  my_hash_creator = {
-    key => value 
+  pioneer = {
+    :name => "Grace Hopper"
   }
-end
+end 
+
+def id_generator 
+  id = {
+    :id => 5
+  }
+end 
+
+def my_hash_creator(key,value)
+  new = {
+    key => value
+  }
+end 
 
 def read_from_hash(hash, key)
   hash[key]
-end
+end 
 
 def update_counting_hash(hash, key)
   if hash[key] 
-    hash[key] += 1 
-    hash 
-  else
-    hash[key] = 1  
-    hash 
-  end 
-end
+    hash[key] += 1
+  else 
+    hash[key] = 1 
+  end
+  hash
+end 
+
+
+
