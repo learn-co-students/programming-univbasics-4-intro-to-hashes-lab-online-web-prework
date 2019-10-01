@@ -1,3 +1,4 @@
+so?
 # Intro to Hashes Lab
 
 ## Learning Goals
