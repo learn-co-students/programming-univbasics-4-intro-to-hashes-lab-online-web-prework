@@ -75,3 +75,25 @@ describe "updating data in a hash" do
   end
 
 end
+
+new_hash = {}
+my_hash = { 
+  :age => 25
+  }
+pioneer = {
+  :name => 'Grace Hopper'
+}
+id_generator = {
+  :id => 59
+}
+my_hash_creator {
+  :height => 5.5
+}
+read_from_hash = {
+  "pet" => "dog", :name => "Bear"
+}
+update_counting_hash = {
+  "length" => 8, :width => 7
+}
+
+
