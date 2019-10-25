@@ -5,13 +5,17 @@ describe "working with hashes" do
 
   describe "instantiating" do
     describe "new_hash" do
+      new_hash = {}
       it "creates an empty hash and returns it" do
         expect(new_hash).to eq({})
       end
     end
 
-
     describe "my_hash" do
+      my_hash = {
+        :name => "Ascension:, " :type => "Boardgame"
+      }
+      
       it "creates and returns a valid hash that contains key/value pairs of your choice" do
         expect(my_hash).to be_a(Hash)
         expect(my_hash.keys.count).to_not eq(0)
@@ -19,6 +23,10 @@ describe "working with hashes" do
     end
 
     describe "pioneer" do
+      pioneer = {
+        :name => "Grace Hopper"
+      }
+      
       it "creates and returns a hash named pioneer whose key is a symbol :name and whose value is a string, 'Grace Hopper'" do
         expect(pioneer).to be_a(Hash)
         expect(pioneer[:name]).to eq("Grace Hopper")
@@ -26,6 +34,10 @@ describe "working with hashes" do
     end
 
     describe "id_generator" do
+      id_generator = {
+        :id => 1
+      }
+      
       it "creates and returns a hash with a key :id and a random number assigned to the value" do
         expect(id_generator).to be_a Hash
         expect(id_generator[:id]).to be_an Integer
@@ -34,6 +46,11 @@ describe "working with hashes" do
     end
 
     describe "my_hash_creator" do
+      my_hash_creator = {
+        :name => "Grace Hopper"
+      }
+      my_hash_creator[:name]
+      
       it "accepts a key and a value as parameters and returns a hash with this key/value pair inside" do
         expect(my_hash_creator(:name, 'Grace Hopper')).to be_a(Hash)
         expect(my_hash_creator(:name, 'Grace Hopper')).to eq({name: 'Grace Hopper'})
@@ -46,6 +63,17 @@ end
 
 describe "reading data from a hash" do
   describe "read_from_hash" do
+    
+    read_from_hash = {
+      :dog => "Corgi", :cat => "Siamese"
+    }
+    read_from_hash[:dog]
+    
+    if read_from_hash[:dog]
+      puts "My favorite dog breed!"
+    else
+      puts "I find your lack of corgis disturbing."
+    end
     it "returns the value corresponding to the provided key" do
       expect(read_from_hash({name: 'Steve'}, :name)).to eq('Steve')
       expect(read_from_hash({'name' => 'Tzvi'}, 'name')).to eq('Tzvi')
@@ -59,6 +87,18 @@ end
 
 describe "updating data in a hash" do
   describe "update_counting_hash" do
+    update_hash = {
+      :apples => 3
+    }
+    update_hash[:apples]
+    update_hash[:apples] = update_hash[:apples] + 1
+    
+    if update_hash[:oranges]
+      update_hash[:oranges] += 1
+    else
+      update_hash[:oranges] = 1
+    end
+    
     it "accepts a hash and key as parameters" do
       expect{ update_counting_hash({},'hello') }.to_not raise_error
     end
@@ -67,6 +107,8 @@ describe "updating data in a hash" do
       expect(update_counting_hash({},'hello')).to eq({'hello' => 1})
       expect(update_counting_hash({total: 5},:age)).to eq({total: 5, age: 1})
     end
+    
+    
 
     it "if key is present, returns a hash where the key's value is incremented by 1" do
       expect(update_counting_hash({count: 5},:count)).to eq({count: 6})
