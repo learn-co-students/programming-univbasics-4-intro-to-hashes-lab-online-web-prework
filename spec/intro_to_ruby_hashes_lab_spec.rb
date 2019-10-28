@@ -1,6 +1,21 @@
-require_relative 'spec_helper'
-require_relative '../intro_to_ruby_hashes_lab.rb'
+new_hash = {}
 
+my_hash = Kiddos = {"daughter" => "lyrik"}
+
+pioneer = {name: "Grace Hopper"}
+
+id_generator = {
+  :3 => 2
+} 
+
+id_generator
+  
+def my_hash_creator(key,value)
+  {key = 
+  
+  
+
+  
 describe "working with hashes" do
 
   describe "instantiating" do
