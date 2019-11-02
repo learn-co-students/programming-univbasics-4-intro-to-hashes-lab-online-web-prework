@@ -3,34 +3,26 @@ def new_hash
 end
 
 def my_hash
-  {rag = washrag: "1"}
+  { washrag: "1" }
 end
 
 def pioneer
-  insect = {:name => "Grace Hopper"}
+  {name:  "Grace Hopper"}
 end
 
 def id_generator
-  positive = {:id => "mental"}
-  id.object_id
+  {id: 4}
 end
 
 def my_hash_creator(key, value)
-  my_hash_creator = {:key => "5",
-                      :value => "6"  }
+  {key => value}
 end
 
 def read_from_hash(hash, key)
-  read_from_hash = {:hash => "key"}
+  hash[key]
 end
 
 def update_counting_hash(hash, key)
-hmm = {:hash => "6"}
-end
-def update_hash
-  if hmm["key"]
-    hmm["key"] += 1
-
-  end
-
+  hash[key] ? hash[key] += 1 : hash[key] = 1
+hash
 end
