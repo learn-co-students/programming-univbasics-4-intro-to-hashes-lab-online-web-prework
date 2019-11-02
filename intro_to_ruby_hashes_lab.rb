@@ -1,9 +1,9 @@
 def new_hash
-  new_hash = {:nothing = }
+  {}
 end
 
 def my_hash
-  rag = {washrag: "1"}
+  {rag = washrag: "1"}
 end
 
 def pioneer
