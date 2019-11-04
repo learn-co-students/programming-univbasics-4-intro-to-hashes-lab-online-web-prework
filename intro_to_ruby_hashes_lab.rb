@@ -1,5 +1,7 @@
 def new_hash
-  # return an empty hash
+new_hash: = {
+  :created => Grocery
+}
 end
 
 def my_hash
