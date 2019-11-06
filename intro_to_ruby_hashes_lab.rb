@@ -24,22 +24,34 @@ def id_generator
   }
 end
 
+
+
+
 def my_hash_creator(key, value)
-    my_hash_creator = {
-      :name => 'Grace Hopper'
-    }
+   
+  hash = {
+    key => value
+  }
+
+
 end
 
-def read_from_hash(hash, key)
 
-  # return the correct value using the hash and key parameters
+
+
+
+def read_from_hash(hash, key)
+    
+    hash[key]
+
 end
 
 def update_counting_hash(hash, key)
     
 end
 
-
-  # given a hash an a key as parameters, return an updated hash
+  # return the correct value using the hash and key parameters read_from_hash instruction
+  
+  # given a hash an a key as parameters, return an updated hash update_counting_hash instructions
   # if the provided key is not present in the hash, add it and assign it to the value of 1
   # if the provided key is present, increment its value by 1
