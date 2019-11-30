@@ -81,6 +81,6 @@ some examples of more complicated hashes!
 ## Resources
 
 - [What is a Hash in Ruby?](http://ruby.about.com/od/rubyfeatures/a/hashes.htm)
-- [Ruby Documentation on Hashes](https://ruby-doc.org/core-2.5.1/Hash.html)
+- [Ruby Documentation on Hashes](accepts a key and a value as parameters and returns a hash with this key/value pair inside)
 
 [rand]: https://ruby-doc.org/core-2.5.0/Random.html
