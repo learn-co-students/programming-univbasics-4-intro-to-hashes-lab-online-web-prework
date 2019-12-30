@@ -5,8 +5,6 @@ describe "working with hashes" do
 
   describe "instantiating" do
     describe "new_hash" do
-      new_hash.new_hash
-
       it "creates an empty hash and returns it" do
         expect(new_hash).to eq({})
       end
