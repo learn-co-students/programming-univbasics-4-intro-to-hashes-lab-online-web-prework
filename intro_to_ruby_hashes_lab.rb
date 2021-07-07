@@ -1,29 +1,56 @@
 def new_hash
-  # return an empty hash
+  {}
 end
 
 def my_hash
-  # return a valid hash with any key/value pair of your choice
+  foods = {1 => "pizza", 2 => "chips", 10 => "cake"}
+ 
+foods[10]
+#=> "cake"
 end
 
 def pioneer
-  # return a hash with a key of :name and a corresponding value of 'Grace Hopper'
+  = :name
+#=> :name
+ 
+name = {:name => "Grace Hopper"}
+#=> {:name=> "Grace Hopper"}
+ 
+name[key]
+#=> "Grace Hopper"
+
 end
 
 def id_generator
-  # return a hash with a key :id assigned to positive integer
+  key = :id
+#=> :id
+ 
+user_info = {:id => "3"}
+#=> {:id=>"3"}
+ 
+user_info[key]
+#=> "3"
 end
 
 def my_hash_creator(key, value)
-  # return a hash that includes the key and value parameters passed into this method
+ pets = {"cat" => "grumpy", "dog" => "Wishbone"}
+#=> {"cat"=>"grumpy", "dog"=>"Wishbone"}
+ 
+pets["cat"]
+#=> "grumpy"
 end
 
 def read_from_hash(hash, key)
-  # return the correct value using the hash and key parameters
+  food = {:melons => 10, :cheese => 4, :cookies => 2, :grapes => 13}
+#=> {:melons=>10, :cheese=>4, :cookies=>2, :grapes=>13}
+ 
+food[:pizza]
+#=> nil
 end
 
 def update_counting_hash(hash, key)
-  # given a hash an a key as parameters, return an updated hash
-  # if the provided key is not present in the hash, add it and assign it to the value of 1
-  # if the provided key is present, increment its value by 1
+  healthy_things = {1 => "cat", 2 => "dog", 10 => "bird"}
+ 
+bird[10]
+#=> "bird"
 end
