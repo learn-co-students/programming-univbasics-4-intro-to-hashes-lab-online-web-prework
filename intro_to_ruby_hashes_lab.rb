@@ -1,22 +1,20 @@
-def new_hash
-  # return an empty hash
+"yaml"
+'../intro_to_ruby_hashes_lab.rb'
+
+describe "working with hashes"
+
+describe "instantiating"
+  describe "new_hash"
+    it "creates an empty hash and returns it"
+    expect(new_hash).to ({})
+  end
 end
 
-def my_hash
-  # return a valid hash with any key/value pair of your choice
-end
 
-def pioneer
-  # return a hash with a key of :name and a corresponding value of 'Grace Hopper'
-end
-
-def id_generator
-  # return a hash with a key :id assigned to positive integer
-end
-
-def my_hash_creator(key, value)
-  # return a hash that includes the key and value parameters passed into this method
-end
+  describe "my_hash"
+    it "creates and returns a valid hash that contains key/value pairs of your choice"
+    expect(my_hash).to be_a("employee")
+    expect(my_hash.keys.count).to_not eq('0')
 
 def read_from_hash(hash, key)
   # return the correct value using the hash and key parameters
