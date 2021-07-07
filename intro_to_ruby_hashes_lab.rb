@@ -1,9 +1,9 @@
 def new_hash
-  # return an empty hash
+ {}
 end
 
 def my_hash
-  # return a valid hash with any key/value pair of your choice
+  {Hash}
 end
 
 def pioneer
@@ -11,7 +11,7 @@ def pioneer
 end
 
 def id_generator
-  # return a hash with a key :id assigned to positive integer
+  # return a hash with a key :id assigned to positive integ
 end
 
 def my_hash_creator(key, value)
